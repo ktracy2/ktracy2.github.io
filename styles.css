@@ -1,0 +1,315 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Alternate background colors for sections */
+.section-odd {
+    background-color: #f4f4f4; 
+}
+.section-even {
+    background-color: #fff; 
+}
+
+/* Styles for navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #fff; 
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 10px;
+}
+
+.nav-links li {
+    margin-right: 15px;
+}
+
+.nav-links li:last-child {
+    margin-right: 50px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #3498db; 
+}
+
+/* Styles for home Section */
+.intro {
+    height: 75vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    background-color: #ecf0f1;
+    text-align: center;
+    padding-top: 100px; 
+}
+
+.intro h1 {
+    font-size: 4rem; 
+    color: #2c3e50; 
+    margin: 0;
+    line-height: 1.2; 
+}
+
+.intro p {
+    font-size: 1.8rem; 
+    color: #555; 
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px; 
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px; 
+    margin-top: 40px;
+    font-size: 1.2rem; 
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+
+
+/* Styles for about section */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.section-header {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+/* Styles for about section */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center; /* Center vertically */
+}
+
+.summary,
+.skills {
+    width: 40%;
+    margin: 10px  auto 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to left within containers */
+}
+
+
+.summary h3,
+.skills h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.summary p,
+.skills ul {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills ul li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.skills ul li:before {
+    content: "";
+    margin-right: 5px;
+    color: #007bff;
+}
+
+/* Styles for projects section */
+#projects {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.project {
+    width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333; 
+}
+
+.project p {
+    margin-top: 10px;
+    color: #666; 
+}
+
+.project a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #2980b9;
+}
+
+
+/* Styles for contact section */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333; /* Dark gray text color */
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form div {
+    margin-bottom: 20px;
+}
+
+#contact form label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333; /* Dark gray text color */
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+#contact form input[type="text"]:focus,
+#contact form input[type="email"]:focus,
+#contact form textarea:focus {
+    border-color: #3498db; /* Light blue border color on focus */
+}
+
+#contact form textarea {
+    height: 150px; /* Adjust as needed */
+}
+
+#contact form button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #2980b9;
+}
+
+/* Styles for footer */
+footer {
+    background-color: #34495e; /* Slightly darker blue background */
+    color: #fff; /* White text color */
+    padding: 30px 20px; /* Increased padding for better spacing */
+    text-align: center; /* Center align text */
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center align social links horizontally */
+    margin-top: 20px; /* Added margin top for better spacing */
+}
+
+.social-links li {
+    margin-right: 15px; /* Increased margin-right for better separation */
+}
+
+.social-links li:last-child {
+    margin-right: 0; /* Remove margin from last social link */
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #fff; /* White text color */
+    font-size: 1.4rem; /* Increased font size for better visibility */
+    transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+    color: #3498db; /* Light blue on hover */
+}
